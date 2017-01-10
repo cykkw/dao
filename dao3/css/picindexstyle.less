@@ -1,0 +1,92 @@
+.all{
+  margin-top: 1%;
+  width: 700px;
+  height: auto;
+  background: #ebebeb;
+  padding:0 25px;
+  box-shadow:  0px 0px 10px grey;
+  overflow: hidden;
+  font-family:  MingLiU;
+  h5{
+    margin-top:3%;
+    span{
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+      text-align: center;
+      background: skyblue;
+    }
+  }
+  h1{
+    font-size: 32px;
+    background: #cccccc;
+    padding:15px 0;
+    width: 323px;
+    text-align: right;
+    color: #e0e0e0;
+    margin-top:5%;
+    margin-left: 10px;
+  }
+  .myul{
+    margin-top: 2%;
+    overflow: hidden;
+    width: 670px;
+
+    li{
+      float: left;
+      width: 323px;
+      height: 110px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 100px;
+      font-family: MingLiU;
+      margin-left: 10px;
+      margin-top: 10px;
+      position: relative;
+      overflow: hidden;
+      .cover a {
+        width: 30px;
+        height: 30px;
+        background: #ffffff;
+        display: block;
+        border-radius: 50%;
+        line-height: 30px;
+        margin: 30px auto;
+      }
+      .cover {
+        width:343px;
+        height:110px;
+        background: lightgrey;
+        opacity: 0.7;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: center;
+        color: black;
+        font-weight: 600;
+        transform-origin: right bottom;
+        -webkit-transform-origin: right bottom;
+        -moz-transform-origin: right bottom;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        transition: all 0.35s;
+        -webkit-transition: all 0.35s;
+        -moz-transition: all 0.35s;
+      }
+      .cover p {
+        font-size: 14px;
+        margin-top: -50px;
+      }
+      &:hover .cover {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+      }
+
+    }
+  }
+
+
+
+}

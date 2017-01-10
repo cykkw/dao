@@ -1,0 +1,232 @@
+body {
+  background: url('../img/wall.jpg');
+  position: relative;
+}
+body .c_circle {
+  background: #eee;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 80px;
+  font-family: MingLiU;
+  color: grey;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #eee;
+  z-index: 20;
+}
+body .c_circle:hover {
+  background: white;
+}
+body .c_wrap {
+  width: 215px;
+  height: 505px;
+  background: white;
+  margin-left: 20px;
+  position: relative;
+  z-index: 10;
+}
+body .c_wrap .c_images {
+  margin-left: 20px;
+  width: 189px;
+  height: 189px;
+  border-radius: 50%;
+}
+body .c_wrap .c_images img {
+  width: 100%;
+}
+body .c_wrap ul {
+  position: absolute;
+  top: 170px;
+  right: 0;
+  width: 215px;
+  border-bottom: 1px solid lightgrey;
+}
+body .c_wrap ul li {
+  text-align: right;
+  height: 40px;
+  margin-top: 3px;
+  line-height: 40px;
+}
+body .c_wrap ul a {
+  padding: 5px;
+  color: black;
+  font-family: MingLiU;
+  font-size: 18px;
+  transition: padding-right 1s;
+}
+body .c_wrap ul a:hover {
+  padding-right: 20px;
+  border: 1px solid #eee;
+  box-shadow: -2px 0 2px #eee;
+}
+body .c_wrap .c_search {
+  position: absolute;
+  top: 425px;
+  left: 30px;
+  border-top: 1px solid grey;
+}
+body .c_wrap .c_search input {
+  height: 30px;
+  width: 180px;
+  background-color: lightgrey;
+}
+body .c_wrap .c_search ::-webkit-input-placeholder {
+  color: grey;
+}
+body .main-picture {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: url('../img/wall1.png');
+}
+body .main-picture .clck {
+  position: relative;
+}
+body .main-picture .clck a {
+  float: right;
+  padding-right: 20px;
+  color: grey;
+  font-size: 16px;
+  font-family: "Microsoft yahei";
+}
+body .main-picture .clck a:hover {
+  color: red;
+}
+body .main-picture .c_picture {
+  margin-left: 16%;
+}
+body .main-picture .alform {
+  position: absolute;
+  top: 25%;
+  left: 34%;
+  width: 500px;
+  height: 250px;
+  border-radius: 10px;
+  margin: 0 auto;
+  z-index: 999;
+  display: none;
+  background: #fff;
+  box-shadow: 0 0 10px #666;
+}
+body .main-picture .alform .poptit {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 5px ;
+  border-bottom: 1px solid lightgrey;
+}
+body .main-picture .alform .close {
+  float: right;
+  font-size: 18px;
+}
+body .main-picture .alform h4 {
+  color: grey;
+  font-size: 12px;
+  margin-left: 5%;
+}
+body .main-picture .alform li {
+  padding-left: 80px;
+  margin-bottom: 15px;
+}
+body .main-picture .alform li strong {
+  float: left;
+  width: 90px;
+  text-align: right;
+  line-height: 32px;
+}
+body .main-picture .alform .ipt {
+  border: solid 1px #d2d2d2;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 0 #f8f8f8;
+  padding: 4px 6px;
+  height: 21px;
+  line-height: 21px;
+  width: 200px;
+  margin-left: 5px;
+  border-radius: 3px;
+}
+body .main-picture .alform .ipt:focus {
+  border-color: skyblue;
+}
+body .main-picture .alform .btns {
+  background: skyblue;
+  width: 80px ;
+  font-size: 18px;
+  margin-left: 23%;
+  border-radius: 3px;
+}
+body .main-picture .regform {
+  position: absolute;
+  top: 25%;
+  left: 34%;
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  z-index: 999;
+  background: #fff;
+  box-shadow: 0 0 10px #666;
+  display: none;
+}
+body .main-picture .regform .repoptit {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 5px ;
+  border-bottom: 1px solid lightgrey;
+}
+body .main-picture .regform .close {
+  float: right;
+  font-size: 18px;
+}
+body .main-picture .regform h4 {
+  color: grey;
+  font-size: 12px;
+  margin-left: 5%;
+}
+body .main-picture .regform li {
+  padding-left: 80px;
+  margin-bottom: 15px;
+}
+body .main-picture .regform li span {
+  color: grey;
+}
+body .main-picture .regform li strong {
+  float: left;
+  width: 90px;
+  text-align: right;
+  line-height: 32px;
+}
+body .main-picture .regform .reipt {
+  border: solid 1px #d2d2d2;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 0 #f8f8f8;
+  padding: 4px 6px;
+  height: 21px;
+  line-height: 21px;
+  width: 200px;
+  margin-left: 5px;
+  border-radius: 3px;
+}
+body .main-picture .regform .reipt:focus {
+  border-color: skyblue;
+}
+body .main-picture .regform .rebtns {
+  background: skyblue;
+  width: 80px ;
+  font-size: 18px;
+  margin-left: 23%;
+  border-radius: 3px;
+}
+body .main-picture .mask {
+  z-index: 998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  display: none;
+  position: fixed;
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="upapp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/cend.css">
+    <script src="../components/angular/angular.js"></script>
+    <script src="../js/upapp.js"></script>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+</head>
+<body style="background: gainsboro">
+
+<div class="container">
+<div class="navbar">
+    <div class="navbar-header">
+        <a href="#" class="navbar-brand" id="z-navigationtp" ><img
+                src="../img/1.png"></a>
+
+        <button type="button"
+                class="btn btn-default navbar-toggle"
+                data-toggle="collapse" data-target="#myCollapse"
+                style="background: rgb(230,230,230)">
+
+            <span class="icon-bar" style="background: grey"></span>
+            <span class="icon-bar" style="background: grey"></span>
+            <span class="icon-bar" style="background: grey"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myCollapse">
+        <ul class="navbar-nav" id="z-navigationwz">
+
+
+
+
+            <li><a href="../index.html">首页</a></li>
+            <li><a>所有古籍</a></li>
+            <li><a>专题</a></li>
+
+            <li><a>图片集</a></li>
+            <li><a>搜素</a></li>
+
+
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" >
+                    关于
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" id="z-menu"
+                    style="background:transparent">
+                    <li><a href="#">关于书格</a></li>
+                    <li><a href="#">标识使用</a></li>
+                    <li><a href="#">投稿和建议</a></li>
+                    <li>
+                        <div class=" col-sm-12">
+
+                            <div style="border-bottom: 1px solid
+grey"></div>
+                        </div>
+
+
+                    </li>
+                    <li><a href="#">更新记录</a></li>
+                </ul>
+
+            </li>
+            <!---------->
+
+            <li class="donate"><a>捐赠</a></li>
+
+            <li><a>常见问题</a></li>
+        </ul>
+
+
+    </div>
+</div>
+
+<div style="border-bottom: 1px solid silver;padding-top: 5px;"
+></div>
+</div>
+
+
+<!-----------------书籍的转轮------->
+<div class="container-fluid" style="margin:25px ">
+<div class="z-flash">
+    <ul>
+        <li class="first">
+            <div class="imgTop"><img src="../img/044.jpg" width="538" height="405" class="tm" alt=""/></div>
+            <div class="imgCen">无言上西楼</div>
+            <div class="imgBot"><a href=""><p class="bt_1">简介</p><p class="bt_2"><span>成书年代--宋代</span><span>作者--冯中翰</span><span>我爱书屋</span></p></a></div>
+        </li>
+        <li>
+            <div class="imgTop"><img src="../img/077.jpg" width="538" height="405"  alt=""/></div>
+            <div class="imgCen">诗词</div>
+            <div class="imgBot"><a href=""><p class="bt_1">简介</p><p class="bt_2"><span>成书年代--宋代</span><span>作者--林通</span><span>我爱书屋</span></p></a></div>
+        </li>
+        <li>
+            <div class="imgTop"><img src="../img/011.jpg" width="538" height="405"  alt="" /></div>
+            <div class="imgCen">群书治要</div>
+            <div class="imgBot"><a href=""><p class="bt_1">简介</p><p class="bt_2"><span>成书年代--唐代</span><span>作    者-- 魏徵、虞世南、褚遂良 </span><span> 我爱书屋 </span></p></a></div>
+        </li>
+        <li>
+            <div class="imgTop"><img src="../img/055.jpg" width="538" height="405"  alt=""/></div>
+            <div class="imgCen">孝经</div>
+            <div class="imgBot"><a href=""><p class="bt_1">简介</p><p class="bt_2"><span>成书年代--秦汉</span><span>作者--孔子及其弟子</span><span>我爱书屋</span></p></a></div>
+        </li>
+        <li>
+            <div class="imgTop"><img src="../img/066.jpg" width="538" height="405"  alt=""/></div>
+            <div class="imgCen">渊海子平</div>
+            <div class="imgBot"><a href=""><p class="bt_1">简介</p><p class="bt_2"><span>成书年代--宋代</span><span>作者--徐升</span><span>我爱书屋</span></p></a></div>
+        </li>
+        <li>
+            <div class="imgTop"><img src="../img/088.jpg" width="538" height="405"  alt=""/></div>
+            <div class="imgCen">博学</div>
+            <div class="imgBot"><a href=""><p class="bt_1">简介</p><p class="bt_2"><span>成书年代--西汉</span><span>作者--戴圣 </span><span>我爱书屋</span></p></a></div>
+        </li>
+        <li>
+            <div class="imgTop"><img src="../img/099.jpg" width="538" height="405"  alt=""/></div>
+            <div class="imgCen">琵琶行</div>
+            <div class="imgBot"><a href=""><p class="bt_1">简介</p><p class="bt_2"><span>成书年代--唐代</span><span>作者--白居易</span><span>我爱书屋</span></p></a></div>
+        </li>
+
+    </ul>
+
+</div>
+
+
+
+</div>
+
+<!----------------------------第三部分------->
+
+<div class="container" style="clear: both"  ng-controller="upctrl">
+    <div class="row">
+        <div class="col-sm-5"> <div style="border-bottom: 1px solid silver"></div></div>
+        <div class="col-sm-2" style="margin-top: -17px">
+            <div class="z-shuji" >更新日志</div>
+        </div>
+        <div class="col-sm-5"> <div style="border-bottom: 1px solid silver"></div></div>
+    </div>
+
+    <pre style="margin-top: 45px; font-size: 25px">
+
+        {{article}}
+        {{author}}
+    </pre>
+
+
+    <!------------------编辑日志--------------------->
+    <form class="form-horizontal" style="padding-top: 50px">
+        <div class="form-group">
+        <h4>编辑日志 </h4>
+            <div class="col-sm-offset-1 col-sm-11">
+                <textarea name="content" ng-model="content"   class="form-control" rows="10">
+                </textarea>
+            </div>
+        </div>
+
+      <!------------------姓名------->
+        <div class="form-group">
+            <h4>姓名</h4>
+            <div class="col-sm-offset-1 col-sm-4">
+                <input type="text"  ng-model="username" placeholder="请输入您的名字" class="form-control">
+            </div>
+
+        </div>
+
+        <!----------邮箱---->
+        <div class="form-group">
+            <h4>邮箱 </h4>
+            <div class="col-sm-offset-1 col-sm-4">
+                <input type="email"   ng-model="useremail" placeholder="请输入您的邮件" class="form-control">
+            </div>
+
+        </div>
+       <!----------------发表按键-------->
+        <div class="col-sm-offset-1 "  style="padding-left: 3px">
+            <button class="btn" style="background: black;color: beige;font-size: 14px;" ng-click="upsend()">发表日志</button>
+        </div>
+    </form>
+
+</div>
+<!------------------------------尾页---------------->
+
+
+
+<div style="background:black;height: auto;margin-top: 30px" class="container-fluid" >
+
+    <div class="container">
+        <div class="row">
+
+            <!-----------------------------------1-->
+            <div class="col-sm-3">
+
+                <div class="row">
+                    <h3>书格@资源</h3>
+
+                </div>
+                <div class="row">
+
+                    <ul>
+                        <li><a href="https://t.shuge.org/all" title="浏览书格在网盘的文件" target="_blank">书格@各网盘浏览</a></li>
+                        <li><a href="https://pdf.shuge.org/" target="_blank">文件目录</a></li>
+                        <li><a href="https://shuge.org/usbtransfer/">直递服务</a></li>
+
+                    </ul>
+                </div>
+
+                <h3>近期热门资源</h3>
+                <div class="row">
+
+                    <ul>
+                        <li><a href="https://shuge.org/ebook/chinese-superstitions/" title="中国民间信仰研究">1.中国民间信仰研究</a></li>
+                        <li><a href="https://shuge.org/ebook/jin-xiu-wan-hua-gu/" title="锦绣万花谷">2.锦绣万花谷</a></li>
+                        <li><a href="https://shuge.org/ebook/zun-sheng-ba-jian/" title="遵生八笺">3.遵生八笺</a></li>
+                        <li><a href="https://shuge.org/ebook/wu-jing-pang-xun/" title="五经旁训">4.五经旁训</a></li>
+                        <li><a href="https://shuge.org/ebook/wen-ji-gui-han-tu/" title="胡笳十八拍文姬归汉图">5.胡笳十八拍文姬归汉图</a></li>
+                        <li><a href="https://shuge.org/ebook/yi-jin-jing-wai-jing-tu-shuo/" title="易筋经外经图说">6.易筋经外经图说</a></li>
+                        <li><a href="https://shuge.org/ebook/jiu-ge-tu-shu-hua-juan/" title="九歌图书画卷">7.九歌图书画卷</a></li>
+                        <li><a href="https://shuge.org/ebook/jin-wen-gong-fu-guo-tu/" title="晋文公复国图">8.晋文公复国图</a></li>
+                        <li><a href="https://shuge.org/ebook/baiyuanyingyi-photographs/" title="柏原英一的摄影集">9.柏原英一的摄影集</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>
+                        <a href="https://baidu.com" class="btn" style="font-size: 25px;background: padding-box" > 详细了解</a>
+                    </h2>
+                </div>
+            </div>
+            <!-----------------------------------2-->
+            <div class="col-sm-3">
+
+
+                <div>
+                    <h3>最新评论</h3>
+                    <ul>
+                        <li>
+                            <span>未曾</span>
+                            发表在《<a href="https://shuge.org/usbtransfer/comment-page-2/#comment-78692">
+                            文件直递服务</a>》
+                        </li>
+                        <li><span><a href="http://chimuxinwei@163.com/" rel="external nofollow" class="url">朱曦</a>
+                    </span>发表在《
+                            <a href="https://shuge.org/usbtransfer/comment-page-2/#comment-78691">文件直递服务</a>》
+                        </li>
+                        <!--<span class="glyphicon glyphicon-tag" style="font-size: 35px;border:none;margin-top: -2px; padding-left: 208px; background-color: black"></span>-->
+
+                        <li><span>沥杯</span>发表在《
+                            <a href="https://shuge.org/ebook/yan-tie-lun/comment-page-1/#comment-78690">盐铁论</a>》
+                        </li>
+
+                        <!--<span class="glyphicon glyphicon-tag" style="font-size: 35px;border:none;margin-top: -2px; padding-left: 208px; background-color: black"></span>-->
+                        <li><span class="comment-author-link">匿名</span>
+                            发表在《<a href="https://shuge.org/ebook/shi-zhuan-da-quan/comment-page-1/#comment-78688">诗传大全</a>》
+                        </li>
+                        <!--<span class="glyphicon glyphicon-tag" style="font-size: 35px;border:none;margin-top: -2px; padding-left: 208px; background-color: black"></span>-->
+
+                        <li><span><a href="http://xn--djr859du2w/" rel="external nofollow" class="url">北野火</a>
+                    </span>发表在《<a href="https://shuge.org/ebook/di-li-jue-yao-xue-xin-fu/comment-page-1/#comment-78683" >地理雪心赋</a>》
+                        </li>
+                        <!--<span class="glyphicon glyphicon-tag" style="font-size: 35px;border:none;margin-top: -2px; padding-left: 208px; background-color: black"></span>-->
+                    </ul>
+                    <h3>
+                        热门搜索
+                    </h3>
+                    <div class="z-sousuo">
+                        <ul>
+                            <li><a>《阴阳别论篇》</a></li>
+                            <li><a>《素书》</a></li>
+                            <li><a>《皇帝内经》</a></li>
+                            <li><a>《天下至道谈》</a></li>
+                            <li><a>《旧约》</a></li>
+                            <li><a>《世纪新说》</a></li>
+                            <li><a>《西行漫记》</a></li>
+                            <li><a>《简史通牒》</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+            <!-----------------------------------3-->
+            <div class="col-sm-3">
+
+                <div class="four columns">
+                    <div id="text-3" class="widget widget_text">
+                        <h3 class="widget-title">微信</h3>
+                        <div class="textwidget">
+                            <p><img src="../img/er.jpg" width="98" height="98">
+                                <br>
+                                订阅号：shugeorg</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!------------------------->
+                <div id="linkcat-2224" class="widget widget_links"><h3 class="widget-title">书格@友链</h3>
+                    <ul class="xoxo blogroll">
+                        <li><a href="https://www.wdl.org/zh/" target="_blank">世界数字图书馆</a></li>
+                        <li><a href="http://hollis.harvard.edu/primo_library/libweb/action/search.do?mode=Basic&amp;vid=HVD&amp;tab=everything&amp;" title="Harvard University" target="_blank">哈佛大学图书馆</a></li>
+                        <li><a href="https://www.digital.archives.go.jp/" title="內閣文庫" target="_blank">国立公文書館</a></li>
+                        <li><a href="http://ostasien.digitale-sammlungen.de/cn/fs1/home/static.html" target="_blank">巴伐利亚州立东亚图书馆</a></li>
+                        <li><a href="http://digital.staatsbibliothek-berlin.de/" target="_blank">德国国家图书馆</a></li>
+                        <li><a href="http://www.sou-yun.com/" title="诗词门户网站" target="_blank">搜韵-诗词门户网站</a></li>
+                        <li><a href="http://dl.ndl.go.jp/" target="_blank">日本国立国会图书馆</a></li>
+                        <li><a href="http://db.sido.keio.ac.jp/kanseki/T_bib_search.php" target="_blank">日本宫内厅陵部</a></li>
+                        <li><a href="http://www.wul.waseda.ac.jp/kotenseki/search.php" target="_blank">早稻田大学图书馆</a></li>
+                        <li><a href="http://pudl.princeton.edu/collections/eal" title="East Asian Library" target="_blank">普林斯顿大学图书馆</a></li>
+                        <li><a href="http://gallica.bnf.fr/" target="_blank">法国国家图书馆</a></li>
+                        <li><a href="http://rbook2.ncl.edu.tw/Search/Index/1" title="古籍" target="_blank">臺灣國家圖書館</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <!-----------------------------------4-->
+            <div class="col-sm-3">
+
+                <div class="four columns"><div id="linkcat-26" class="widget widget_links"><h3 class="widget-title">书格@关联</h3>
+                    <ul class="xoxo blogroll">
+                        <li><a href="https://t.shuge.org/bt" title="BitTorrent Sync" target="_blank">书格@BTSync</a></li>
+                        <li><a href="https://twitter.com/shugeorg" target="_blank">书格@Twitter</a></li>
+                        <li><a href="https://shuge.org/donate/" title="donate">捐赠支持</a></li>
+                        <li><a href="http://weibo.com/pdfsite" target="_blank">新浪微博</a></li>
+                        <li><a href="https://site.douban.com/171180/" target="_blank">豆瓣小站</a></li>
+                        <li><a href="http://www.daoon.com/" target="_blank">道卬</a></li>
+
+                    </ul>
+                </div>
+                    <div id="text-2" class="widget widget_text"><h3 class="widget-title">版权说明</h3>
+
+                        <div class="textwidget">
+                            <p><img src="../img/07.png" alt="chinese-dream" width="80" height="80"><br>
+                                * 版权自由 转载不究 *
+                            </p>
+                            <p>©2016,<a href="https://shuge.org/">书格</a> | 有品格的数字古籍图书馆</p>
+                            <p>Based on <a href="https://wordpress.org/" target="_blank">wordpress</a> .By <a href="http://www.douban.com/people/zern/" target="_blank">weiceng</a></p>
+                        </div>
+                    </div></div>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-------------------------------分隔结束--------------------->
+</div>
+
+</div>
+
+</div>
+<!----------------------------------------返回顶部------------------------>
+<div id="z-back">
+
+    <img src="../img/08.png">
+</div>
+
+</body>
+<script src="../components/jquery/dist/jquery.js"></script>
+<script src="../components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../js/rizi.js"></script>
+<script src="../js/shuge.js"></script>
+</html>

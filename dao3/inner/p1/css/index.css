@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: gainsboro;
+  font-family: "微软雅黑";
+}
+#inner-pushpin {
+  position: fixed;
+  top: 20px;
+  right: 50px;
+}
+#inner-pushpin > div {
+  width: 32px;
+  height: 32px;
+  float: left;
+  font-size: 16px;
+  background-color: silver;
+  border-radius: 50%;
+  margin-left: 12px;
+  line-height: 32px;
+  text-align: center;
+  font-weight: bolder;
+}
+#inner-pushpin #inner-right,
+#inner-pushpin #inner-left {
+  cursor: pointer;
+}
+.x-shell {
+  width: 12310px;
+  height: 400px;
+  margin-top: 8% ;
+}
+.x-shell > div {
+  float: left;
+}
+.x-shell .x-shell-box {
+  float: left;
+  width: 700px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 1px 1px 1px #9d9d9d;
+  -moz-box-shadow: 1px 1px 1px 1px #9d9d9d;
+  box-shadow: 1px 1px 1px 1px #9d9d9d;
+}
+.x-shell .x-shell-box img {
+  position: absolute;
+  left: 0;
+  width: 700px;
+  height: 400px;
+  -webkit-transition: all 2000ms ease-out;
+  -moz-transition: all 2000ms ease-out;
+  -o-transition: all 2000ms ease-out;
+  -ms-transition: all 2000ms ease-out;
+  transition: all 2000ms ease-out;
+}
+.x-shell .x-shell-box .x-shell-caption {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: all 2000ms ease-out;
+  -moz-transition: all 2000ms ease-out;
+  -o-transition: all 2000ms ease-out;
+  -ms-transition: all 1000ms ease-out;
+  transition: all 2000ms ease-out;
+  left: 0;
+}
+.x-shell .x-shell-box .x-shell-fade-caption {
+  opacity: 0;
+  width: 700px;
+  height: 400px;
+}
+.x-shell .x-shell-box :hover .x-shell-fade-caption {
+  opacity: .8;
+}
+.x-shell .shell-inner {
+  width: 1280px !important;
+  height: 400px !important;
+}
+.x-shell .shell-inner > div {
+  float: left;
+  width: 320px;
+  height: 400px;
+  background-color: white;
+}
+.x-shell .shell-inner > div > div {
+  width: 280px;
+  height: 375px;
+  float: left ;
+  margin-left: 20px;
+  margin-top: 13px;
+}
+.x-shell .shell-inner > div > div a {
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.x-shell .shell-inner > div > div h3 {
+  text-align: center;
+}
+.x-shell .shell-inner > div > div p {
+  font-size: 14px;
+  line-height: 26px;
+  text-indent: 2em;
+}
+.x-shell .shell-inner > div > div h4 {
+  text-align: center;
+}
+.x-shell .baguetteBox > div {
+  width: 700px;
+  height: 400px;
+  float: left;
+  margin-left: 30px;
+}

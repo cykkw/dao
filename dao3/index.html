@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Myapp">
+<head>
+    <meta charset="UTF-8">
+    <title>DAO on</title>
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/indexstyle.css">
+    <link rel="stylesheet" href="css/detailstyle.css">
+    <link rel="stylesheet" href="css/pagesstyle.css">
+    <script src="components/jquery/dist/jquery1.8.js"></script>
+    <script src="components/angular/angular.js"></script>
+    <script src="components/angular-route/angular-route.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/myapp.js"></script>
+    <script src="js/controller.js"></script>
+
+
+</head>
+<body ng-controller="myctrl">
+
+<!--圆形按钮 关闭和展开-->
+<div class="c_circle" >关闭</div>
+<!--导航部分-->
+<div class="c_wrap"  >
+        <!--佛头头像-->
+        <div class="c_images">
+            <img src="img/log.png">
+        </div>
+        <!--导航部分-->
+        <ul >
+            <li><a href="#/home">首页</a></li>
+            <li><a href="pages/shuge.html">书格</a></li>
+            <li><a href="pages/rizi.html">更新日志</a></li>
+            <li><a href="pages/juanzhen.html">关于书格</a></li>
+            <li><a href="#/picindex">图片集索引</a></li>
+        </ul>
+
+        <!--搜索框部分-->
+        <div class="c_search">
+            <input type="search" ng-model="searchs" ng-keypress="enter($event)" placeholder="请输入书名...">
+        </div>
+    </div>
+
+<!--按钮、左滑及右滑 、底部-->
+<div class="main-picture ">
+    <!--翻页 按钮-->
+    <div class="x-btn" >
+        <a href="#/index1" class="btn  fbtn" id="x-bac">1</a>
+        <a href="#/index2" class="btn  fbtn">2</a>
+        <a href="#/index3" class="btn  fbtn">3</a>
+        <a href="#/index4" class="btn  fbtn">4</a>
+        <a href="#/index5" class="btn  fbtn">5</a>
+        <a href="#/index6" class="btn  fbtn">6</a>
+    </div>
+    <div id="pushpin">
+        <div id="right">
+            <strong> < </strong>
+        </div>
+        <div id="left">
+            <strong> > </strong>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="c_foot">
+        <ul>
+            <li><a href="#/picindex">图片集索引</a></li>
+            <li><a href="pages/juanzhen.html">关于书格</a></li>
+            <li><a href="pages/rizi.html">更新日志</a></li>
+            <li><a href="pages/shuge.html">书格</a></li>
+            <li><a href="#/home">首页</a></li>
+        </ul>
+        <div>Dao on | 道卬</div>
+    </div>
+</div>
+<!--登录与注册-->
+<div id="wrap">
+    <!--注册与登录按钮-->
+    <div class="clck" ng-show="!islogin">
+        <a href="javascript:;" title="注册" class="regist">注册</a>
+        <a href="javascript:;" title="登录" class="login">登录</a>
+    </div>
+    <div class="clck" ng-show="islogin">
+        <a href="javascript:;" title="用户" > {{user}},你好</a>
+        <a href="javascript:;" title="退出" ng-click="logout()">退出</a>
+    </div>
+    <!--登录-->
+    <div class="alform">
+        <div class="poptit">
+            <a href="javascript:;" title="关闭" class="close">×</a>
+            <h3>登&nbsp;&nbsp;&nbsp;录 </h3>
+        </div>
+        <form class="logform" >
+            <ul>
+                <li>
+                    <strong>邮&nbsp;箱：</strong>
+                    <input class="ipt" type="email" ng-required="true" ng-model="logemail" placeholder="请输入邮箱">
+                </li>
+                <li>
+                    <strong>密&nbsp;码：</strong>
+                    <input class="ipt" type="password" ng-required="true" ng-model="logpass" placeholder="请输入密码">
+                </li>
+                <li>
+                    <button type="button"  ng-click="logsend()">登录</button>
+                    <input type="reset" value="重置" class="logresets">
+
+                </li>
+            </ul>
+        </form>
+    </div>
+    <!--注册-->
+    <div class="regform" >
+        <div class="repoptit">
+            <a href="javascript:;" title="关闭" class="close">×</a>
+            <h3>注&nbsp;&nbsp;&nbsp;册 </h3>
+        </div>
+        <form  name="registerform">
+            <ul>
+                <li><strong>用户名：</strong>
+                    <input class="reipt" type="text" ng-model="reuser" ng-required="true" name="remyuser" placeholder="请输入用户名" >
+                    <span ng-show="registerform.remyuser.$error.required">用户名不能为空</span>
+                </li>
+                <li>
+                    <strong>邮箱：</strong>
+                    <input class="reipt" type="email"  ng-model="reemail" name="remyemail" placeholder="请输入邮箱" ng-required="true">
+                    <span ng-show="registerform.remyemail.$error.required">邮箱不能为空</span>
+                </li>
+                <li>
+                    <strong>密 码：</strong>
+                    <input class="reipt" type="password" ng-model="repass" name="remypass" placeholder="请输入密码" ng-required="true">
+                    <span ng-show="registerform.remypass.$error.required">密码不能为空</span>
+                </li>
+                <li>
+                    <strong>确认密码：</strong>
+                    <input class="reipt" type="password" ng-model="agpass" name="myagpass" placeholder="请确认密码" ng-required="true">
+                    <span ng-show="registerform.myagpass.$error.required">请确认密码</span>
+                </li>
+                <li>
+                    <button ng-click="resend()" type="button">注册</button>
+                    <input type="reset" value="重置" class="resets">
+                </li>
+            </ul>
+        </form>
+    </div>
+    <!--遮罩层-->
+    <div class="mask" ></div>
+
+</div>
+<!--长图部分-->
+<div ng-view class="c_picture" id="all"></div>
+
+</body>
+
+<script src="js/pushpin.js"></script>
+
+
+</html>

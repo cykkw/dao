@@ -1,0 +1,342 @@
+body {
+  background: url('../img/wall.jpg');
+  position: relative;
+  width: 100%;
+}
+body .c_circle {
+  background: #eee;
+  width: 3%;
+  height: 6%;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 7%;
+  font-family: KaiTi;
+  font-size: 14px;
+  color: grey;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #eee;
+  z-index: 20;
+}
+body .c_circle:hover {
+  background: white;
+}
+body .c_wrap {
+  width: 13%;
+  height: 505px;
+  background: white;
+  left: 2%;
+  position: relative;
+  position: fixed;
+  font-family: KaiTi;
+  top: 0;
+  z-index: 10;
+}
+body .c_wrap .c_images {
+  margin-top: 3%;
+  margin-left: 16%;
+  width: 90%;
+  height: 40%;
+  border-radius: 50%;
+}
+body .c_wrap .c_images img {
+  width: 90%;
+}
+body .c_wrap ul {
+  position: absolute;
+  top: 170px;
+  right: 0;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+}
+body .c_wrap ul li {
+  text-align: right;
+  height: 40px;
+  margin-top: 3px;
+  line-height: 40px;
+}
+body .c_wrap ul a {
+  padding: 5px;
+  color: black;
+  font-size: 20px;
+  transition: padding-right 1s;
+}
+body .c_wrap ul a:hover {
+  padding-right: 20px;
+  border: 1px solid #eee;
+  box-shadow: -2px 0 2px #eee;
+}
+body .c_wrap .c_search {
+  position: absolute;
+  top: 85%;
+  left: 6%;
+  width: 100%;
+}
+body .c_wrap .c_search input {
+  height: 30px;
+  width: 90%;
+  background-color: #e0e0e0;
+}
+body .c_wrap .c_search input:focus {
+  border-color: skyblue;
+}
+body .c_wrap .c_search ::-webkit-input-placeholder {
+  color: grey;
+}
+body .main-picture {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #d6d6d6;
+}
+body .main-picture #pushpin {
+  position: fixed;
+  top: 75%;
+  right: 3%;
+}
+body .main-picture #pushpin > div {
+  width: 32px;
+  height: 32px;
+  float: left;
+  font-size: 16px;
+  background-color: silver;
+  border-radius: 50%;
+  margin-left: 12px;
+  line-height: 32px;
+  text-align: center;
+}
+body .main-picture #pushpin #right,
+body .main-picture #pushpin #left {
+  cursor: pointer;
+}
+body .main-picture .x-btn {
+  position: fixed;
+  left: 18%;
+  top: 75%;
+}
+body .main-picture .x-btn .btn {
+  font-weight: 900;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50% ;
+  box-shadow: 0 4px 2px grey;
+  margin-left: 4px;
+  background-color: white;
+  color: black;
+}
+body .main-picture .x-btn #x-bac {
+  background-color: black;
+  color: white;
+}
+body .main-picture .c_foot {
+  width: 100% ;
+  height: 40px ;
+  background: white;
+  position: fixed;
+  bottom: 0;
+  font-size: 18px;
+  font-family: KaiTi;
+  line-height: 40px;
+  overflow: hidden;
+}
+body .main-picture .c_foot a {
+  color: black;
+  font-family: KaiTi;
+}
+body .main-picture .c_foot ul {
+  float: left;
+}
+body .main-picture .c_foot ul li {
+  display: inline-block;
+  width: 100px;
+  margin-left: 3%;
+}
+body .main-picture .c_foot div {
+  width: 200px;
+  float: right;
+}
+body #wrap {
+  position: relative;
+  height: 70%;
+  width: 70%;
+}
+body #wrap .clck {
+  position: fixed;
+  top: 4%;
+  right: 1%;
+  width: 12%;
+}
+body #wrap .clck a {
+  padding: 0 5%;
+  color: grey;
+  font-size: 16px;
+  font-family: "Microsoft yahei";
+}
+body #wrap .clck a:hover {
+  color: red;
+}
+body #wrap .alform {
+  position: fixed;
+  left: 30%;
+  top: 18%;
+  height: 53%;
+  width: 45%;
+  background: url("../img/123.gif");
+  background-size: 100% 100%;
+  border-radius: 10px;
+  z-index: 999;
+  display: none;
+  box-shadow: 0 0 10px #666;
+}
+body #wrap .alform .poptit {
+  height: 20%;
+  font-size: 40px;
+  font-family: "Microsoft yahei";
+}
+body #wrap .alform .poptit h3 {
+  line-height: 130%;
+  text-align: center;
+}
+body #wrap .alform .poptit .close {
+  float: right;
+  font-size: 26px;
+}
+body #wrap .alform ul {
+  margin-top: 4%;
+}
+body #wrap .alform ul li {
+  margin-top: 5%;
+}
+body #wrap .alform ul li strong {
+  float: left;
+  width: 15%;
+  text-align: right;
+  line-height: 32px;
+  font-size: 24px;
+  margin-left: 10%;
+}
+body #wrap .alform ul li .ipt {
+  border: solid 1px #d2d2d2;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 0 #f8f8f8;
+  padding: 2% 1%;
+  width: 60%;
+  height: 3rem;
+  margin-left: 5px;
+  opacity: 0.8;
+}
+body #wrap .alform ul li .ipt:focus {
+  border-color: deepskyblue;
+}
+body #wrap .alform ul li button {
+  width: 14%;
+  height: 3rem;
+  border-radius: 5px;
+  font-size: 24px;
+  background: #8c8c8c;
+  opacity: 0.6;
+  margin-left: 32%;
+  color: black;
+}
+body #wrap .alform ul li .logresets {
+  width: 14%;
+  height: 3rem;
+  border-radius: 5px;
+  font-size: 24px;
+  background: #8c8c8c;
+  opacity: 0.6;
+  margin-left: 2%;
+  color: black;
+}
+body #wrap .regform {
+  position: fixed;
+  left: 30%;
+  top: 18%;
+  height: 55%;
+  width: 45%;
+  background: url("../img/123.gif");
+  background-size: 100% 100%;
+  border-radius: 10px;
+  z-index: 999;
+  box-shadow: 0 0 10px #666;
+  display: none;
+}
+body #wrap .regform .repoptit {
+  height: 20%;
+  font-size: 40px;
+  font-family: "Microsoft yahei";
+}
+body #wrap .regform .repoptit h3 {
+  line-height: 130%;
+  text-align: center;
+}
+body #wrap .regform .repoptit .close {
+  float: right;
+  font-size: 26px;
+}
+body #wrap .regform li {
+  padding-left: 11%;
+  margin-bottom: 3%;
+}
+body #wrap .regform li span {
+  color: grey;
+}
+body #wrap .regform li strong {
+  float: left;
+  width: 26%;
+  margin-left: -10%;
+  text-align: right;
+  font-size: 2rem;
+}
+body #wrap .regform .reipt {
+  border: solid 1px #d2d2d2;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 0 #f8f8f8;
+  padding: 2% 1%;
+  height: 3.4rem;
+  width: 55%;
+  margin-left: 1%;
+  opacity: 0.8;
+}
+body #wrap .regform .reipt:focus {
+  border-color: deepskyblue;
+}
+body #wrap .regform button {
+  width: 14%;
+  height: 3rem;
+  border-radius: 5px;
+  font-size: 24px;
+  background: #8c8c8c;
+  opacity: 0.6;
+  margin-left: 26%;
+  color: black;
+}
+body #wrap .regform .resets {
+  width: 14%;
+  height: 3rem;
+  border-radius: 5px;
+  font-size: 24px;
+  background: #8c8c8c;
+  opacity: 0.6;
+  margin-left: 2%;
+  color: black;
+}
+body #wrap .mask {
+  z-index: 998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  display: none;
+  position: fixed;
+}
+body .c_picture {
+  position: absolute;
+  left: 18%;
+  top: 18%;
+  height: 52%;
+}

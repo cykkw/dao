@@ -1,0 +1,236 @@
+@charset "utf-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "微软雅黑";
+  font-size: 12px;
+  text-decoration: none;
+  list-style-type: none;
+}
+img {
+  border: 0px;
+}
+a {
+  color: gray;
+}
+a:hover {
+  text-decoration: none;
+}
+* {
+  list-style: none;
+}
+#z-navigationtp {
+  width: 600px;
+}
+#z-navigationtp img {
+  width: 249px;
+  height: 80px;
+  float: left;
+}
+#z-navigationwz {
+  padding-top: 50px;
+  font-family: "微软雅黑";
+}
+#z-navigationwz li {
+  padding-left: 30px ;
+  text-align: center;
+}
+/*#z-carouselone {*/
+/*padding-top: 30px;*/
+/*}*/
+/*#z-carousel img {*/
+/*width: 1400px;*/
+/*height: 450px;*/
+/*}*/
+#z-menu li {
+  padding-top: 4px;
+}
+.donate a:before {
+  content: "♥";
+  color: red;
+}
+/*瑞丽深度开始*/
+.z-flash {
+  width: 1180px;
+  height: 450px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+.z-flash ul li {
+  width: 106px;
+  height: 450px;
+  border-left: 1px solid #000;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+.z-flash ul li .imgTop img {
+  opacity: 0.4;
+}
+.z-flash ul li .imgTop img.tm {
+  opacity: 1;
+}
+.z-flash ul li .imgCon {
+  width: 538px;
+  height: 405px;
+}
+.z-flash ul li .imgCen {
+  width: 538px;
+  height: 50px;
+  background: rgba(70, 70, 70, 0.5);
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  position: absolute;
+  left: 0px;
+  bottom: 45px;
+  text-indent: 20px;
+  display: none;
+}
+.z-flash ul li .imgBot {
+  width: 538px;
+  height: 45px;
+  background: black;
+}
+.z-flash ul li .imgBot p.bt_1 {
+  width: 80px;
+  line-height: 45px;
+  font-size: 16px;
+  color: #fff;
+  text-indent: 20px;
+  float: left;
+}
+.z-flash ul li .imgBot p.bt_2 {
+  width: 458px;
+  height: 45px;
+  line-height: 45px;
+  float: left;
+  display: none;
+}
+.z-flash ul li .imgBot p.bt_2 span {
+  font-size: 14px;
+  color: #fff;
+  padding-right: 30px;
+  padding-left: 10px;
+}
+.z-flash ul li.first {
+  width: 538px;
+}
+.z-flash ul li.fast {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+/* Basic Grey */
+.basic-grey {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  background: #F7F7F7;
+  padding: 25px 15px 25px 10px;
+  font: 12px Georgia, "Times New Roman", Times, serif;
+  color: #888;
+  text-shadow: 1px 1px 1px #FFF;
+  border: 1px solid #E4E4E4;
+}
+.basic-grey h1 {
+  font-size: 25px;
+  padding: 0px 0px 10px 40px;
+  display: block;
+  border-bottom: 1px solid #E4E4E4;
+  margin: -10px -15px 30px -10px;
+  color: #888;
+}
+.basic-grey h1 > span {
+  display: block;
+  font-size: 11px;
+}
+.basic-grey label {
+  display: block;
+  margin: 0px;
+}
+.basic-grey label > span {
+  float: left;
+  width: 20%;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 10px;
+  color: #888;
+}
+.basic-grey input[type="text"],
+.basic-grey input[type="email"],
+.basic-grey textarea,
+.basic-grey select {
+  border: 1px solid #DADADA;
+  color: #888;
+  height: 30px;
+  margin-bottom: 16px;
+  margin-right: 6px;
+  margin-top: 2px;
+  outline: 0 none;
+  padding: 3px 3px 3px 5px;
+  width: 70%;
+  font-size: 12px;
+  line-height: 15px;
+  box-shadow: inset 0px 1px 4px #ECECEC;
+  -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+  -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+.basic-grey textarea {
+  padding: 5px 3px 3px 5px;
+}
+.basic-grey select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  width: 70%;
+  height: 35px;
+  line-height: 25px;
+}
+.basic-grey textarea {
+  height: 100px;
+}
+.basic-grey .button {
+  background: #E27575;
+  border: none;
+  padding: 10px 25px 10px 25px;
+  color: #FFF;
+  box-shadow: 1px 1px 5px #B6B6B6;
+  border-radius: 3px;
+  text-shadow: 1px 1px 1px #9E3F3F;
+  cursor: pointer;
+}
+.basic-grey .button:hover {
+  background: #CF7A7A;
+}
+.row {
+  padding-top: 20px;
+}
+.row .z-shuji {
+  text-align: center;
+  width: 167px;
+  height: 35px;
+  background: black;
+  padding-top: 7px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+}
+.col-xs-3 {
+  font-size: 13px;
+}
+.z-sousuo li {
+  padding: 4px;
+}
+#z-back {
+  width: 50px;
+  height: 50px;
+  background: rgba(51, 51, 51, 0.5);
+  border-radius: 25px;
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+}
